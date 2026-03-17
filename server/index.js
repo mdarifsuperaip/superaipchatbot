@@ -13,7 +13,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
-  res.send("server is running perfectly fine ");
+  res.json({"message":"server is running perfectly fine "});
 });
 
 async function setup() {
